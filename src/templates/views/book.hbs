@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  {{>head}}
+    <title>
+      Book your class!
+    </title>
+  </head>
+ 
+  <body style="background: rgb(220, 226, 126);">
+     {{>navbar}}
+    <div class="container my-5">
+        <h1 class="container text-center">Book Your Class!</h1>
+        <form action="/book.hbs " method="post">
+            <div class="form-group">
+                <label for="exampleFormControlInput1"><b>Name</b></label>
+                <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="name surname" name="name">
+              </div>
+
+              <div class="form-group">
+                <label for="exampleFormControlInput1"><b>Phone No.</b></label>
+                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="+91 9999999999" name="phone">
+              </div>
+
+            <div class="form-group">
+              <label for="exampleFormControlInput1"><b>Email address</b></label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1"><b>Choose subject</b></label>
+              <select class="form-control" id="exampleFormControlSelect1" name="subject">
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>C/C++/Java</option>
+                <option>Python</option>
+                <option>Web Dev</option>
+                <option>App Dev</option>
+                <option>Web Design</option>
+                <option>Mac</option>
+                <option>Wordpress</option>
+                <option>Android</option>
+                <option>iOS</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect2"><b>Select Slots</b></label>
+              <br>
+              <input type="checkbox" name="c1" value="12:00 P.M.-01:00 P.M.">12:00 P.M.-01:00 P.M.<br>
+              <input type="checkbox" name="c2" value="01:00 P.M.-02:00 P.M.">01:00 P.M.-02:00 P.M.<br>
+              <input type="checkbox" name="c3" value="02:00 P.M.-03:00 P.M.">02:00 P.M.-03:00 P.M.<br>
+              <input type="checkbox" name="c4" value="03:00 P.M.-04:00 P.M.">03:00 P.M.-04:00 P.M.<br>
+              <input type="checkbox" name="c5" value="04:00 P.M.-05:00 P.M.">04:00 P.M.-05:00 P.M.<br>
+              <input type="checkbox" name="c6" value="05:00 P.M.-06:00 P.M.">05:00 P.M.-06:00 P.M.<br>
+              <input type="checkbox" name="c7" value="07:00 P.M.-08:00 P.M.">07:00 P.M.-08:00 P.M.<br>
+              <input type="checkbox" name="c8" value="08:00 P.M.-09:00 P.M.">08:00 P.M.-09:00 P.M.<br>
+              <input type="checkbox" name="c9" value="09:00 P.M.-10:00 P.M.">09:00 P.M.-10:00 P.M.<br>
+              
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">About Yourself</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Tell us about yourself, your qualifications ,your requirements and expectations" name="text"></textarea>
+            </div>
+
+            <input class=".btn btn-success" type="submit"  value="submit">
+      <input class=".btn btn-primary" type="reset"  value="clear">
+          </form>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

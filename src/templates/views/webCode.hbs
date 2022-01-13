@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   {{>head}}
+    <style>
+        .card-title {
+
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 200;
+            font-style: oblique;
+            font-size: 30px;
+
+        }
+        .card{
+            border: 5px;
+            border-style: double;
+        }
+        .card-img-top{
+            border-style:dotted;
+        }
+
+        
+    </style>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <title>
+        Learn Web Dev
+      </title>
+</head>
+
+<body style="background-color: rgb(170, 253, 226);" >
+    {{>navbar}}
+     
+    <marquee behavior="scroll" direction="right" style="background-color: khaki">
+        <h1
+            style="text-align: center;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 350;font-weight: bold;color: black;">
+            <u>Explore Options</u>
+        </h1>
+        </marquee>
+    <!-- grid system -->
+    
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-4">
+                <!-- first col -->
+                <div class="card" style="width: 18rem;">
+                    <img src="images/bootstrap-logo.png" class="card-img-top" height="250">
+                    <div class="card-body">
+                        <h5 class="card-title">Bootstrap</h5>
+                        <p class="card-text">Get started with Bootstrap,the world’s most popular framework for building responsive, mobile-first sites with a template starter page.</p>
+                        <a href="https://getbootstrap.com/"target="_blank" class="btn btn-primary">Explore more</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <!-- first col -->
+                <div class="card" style="width: 18rem;">
+                    <img src="images/tailwind.jpg" class="card-img-top" height="250">
+                    <div class="card-body">
+                        <h5 class="card-title">TailWind</h5>
+                        <p class="card-text">A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.</p>
+                        <a href="https://tailwindcss.com/" target="_blank" class="btn btn-primary">Explore more</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <!-- first col -->
+                <div class="card" style="width: 18rem;">
+                    <img src="images/unnamed.jpg" class="card-img-top" height="250">
+                    <div class="card-body">
+                        <h5 class="card-title">GeeksForGeeks</h5>
+                        <p class="card-text">GDesign a web page using HTML and CSS.<br><br>Current difficulty : Basic 
+                            <br>Easy and simple to understand                        
+                        </p>
+                        <a href="https://www.geeksforgeeks.org/design-a-web-page-using-html-and-css/" target="_blank" class="btn btn-primary">Explore more</a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-4">
+                <!-- first col -->
+
+                <div class="card" style="width: 18rem;">
+                    <img src="images/6hViHfmJ_400x400.jpg" height="250" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">JavatPoint</h5>
+                        <p class="card-text">JavaTpoint offers college campus training on Core Java, Advance Java, .Net,
+                            Android, Hadoop, PHP, Web Technology and Python. </p>
+                        <a href="https://www.javatpoint.com/website" target="_blank" class="btn btn-primary">Explore more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <!-- first col -->
+                <div class="card" style="width: 18rem;">
+                    <img src="images/wix.jpg " class="card-img-top" height="250" >
+                    <div class="card-body">
+                        <h5 class="card-title">Wix</h5>
+                        <p class="card-text">Create better websites with mobile-responsive templates, seamless drag &
+                            drop
+                            and unlimited customization.</p>
+                        <a href="https://www.wix.com/freesitebuilder/hiker-create?utm_source=google&utm_medium=cpc&utm_campaign=651915522^32117523839&experiment_id=wix^e^49997539540^&gclid=Cj0KCQiA2sqOBhCGARIsAPuPK0gGCutQgGGmqdmqigXh_071I947DArHRrblz8IcmZf7h8JLdbqb2ykaAjaREALw_wcB" target="_blank" 
+                            class="btn btn-primary">Explore more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <!-- first col -->
+                <div class="card" style="width: 18rem;">
+                    <img src="images/w3-schools-logo.jpg" class="card-img-top" height="250" >
+                    <div class="card-body">
+                        <h5 class="card-title">W3Schools</h5>
+                        <p class="card-text">W3Schools is known for learning, testing and training.Examples are simplified to improve reading and basic understanding.</p>
+                        <a href="https://www.w3schools.com/" target="_blank" class="btn btn-primary">Explore more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    -->
+    <footer class="container text-center">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p  class="float-left"> © 2017-2021 Company, Inc. · <a href="privacy.html">Privacy</a> · <a href="#">Terms</a></p>
+      </footer>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+{{>head}}
+  <style>
+    .contain {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      box-sizing: border-box;
+    }
+
+    .card{
+        margin: 40px;
+        border: 5px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .item1 {
+      background-color: navy;
+      height: 70vh;
+      width: max-content;
+      color: rgb(255, 255, 255);
+
+    }
+
+    .c {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 50px;
+      font-weight: bold;
+
+    }
+
+    .color-text {
+      color: yellow;
+    }
+
+    .card{
+      height: 400px;
+      padding: 20px;
+    }
+
+    
+  </style>
+
+<title>
+  About Page Icoder
+</title>
+</head>
+
+<body>
+
+  {{>navbar}}
+
+  <div class="contain text-center">
+
+
+    <div class="item1 item ">
+      <h1 class="my-3">ABOUT US</h1>
+      <h2 class="c">Tommorow's skills, <span class="color-text"> today</span></h2>
+      <h5 class="contain my-4">
+      <p>iCoder’s mission is to create new possibilities for people and organizations everywhere by connecting them to
+        the knowledge and skills they need to succeed in a changing world. </p>
+      <p>Fueled by the iCoder marketplace,courses helps students and teachers achieve critical business outcomes and
+        stay
+        competitive by offering fresh, relevant, and personalized on-demand learning. Our content covers key
+        business and technical topics ranging from web development and app development to leadership, marketing, design,
+        stress
+        management, and much more. In addition to a curated content collection, we offer a platform to drive effective
+        learning as well as tools for leaders to host and distribute their own proprietary content.</p>
+        </h5>
+
+
+    </div>
+
+    
+    <div class="item2 item my-5">
+      <h2 class="c">By The Numbers</h2>
+      <table>
+        <th>
+          <div class="card" style="width: 18rem;">
+            <img src="images/1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">A global learning solution</h3>
+              <p class="card-text">Our enterprise-ready features are designed to help you scale learning to all employees across your organization</p>
+              
+            </div>
+          </div>
+        </th>
+
+        <th>
+          <div class="card" style="width: 18rem;">
+            <img src="images/2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">Comprehensive content</h3>
+              <p class="card-text">We offer fresh courses on emerging topics that keep your employees ahead of the curve.</p>
+            </div>
+          </div>
+        </th>
+
+        <th >
+          <div class="card" style="width: 18rem;">
+            <img src="images/3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">Native-language learning</h3>
+              <p class="card-text">English, Marathi, Urdu, Marwari, Awadhi, Italian, Punjabi, Bengali, Tamil, Kannada, Oriya, Spanish, Hindi</p>
+            </div>
+          </div>
+        </th>
+      </table>
+
+    </div>
+
+  </div>
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+
+    <hr/>
+
+    <div style="background-color: black;color:white;">
+      <center>
+     
+        <h3><b>Contact Details:</b></h3>
+        <ul>Name: Malvika Madan</ul>
+        <ul>Phone no: +91 9999999999</ul>
+        <ul>Email:<a href="https://mail.google.com/mail/u/1/?ogbl#inbox">malvikamadan2509@gmail.com</a></ul>
+        <ul>Timings: 10 AM-6 PM</ul>
+        </center>
+      
+    </div>
+    <hr/>
+
+  <div>
+
+    <footer>
+      <p class="float-left">© 2017-2021 Company, Inc. · <a href="privacy.hbs">Privacy.</a> 
+      <p class="float-right"><a href="#">Back to top</a></p>
+    </footer>
+  </div>
+</body>
+
+</html>

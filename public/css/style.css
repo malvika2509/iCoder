@@ -1,0 +1,30 @@
+.icon{
+    font-family: 'Times New Roman', Times, serif; 
+    font-weight: 200; 
+    font-style: oblique; 
+    font-size: 30px;
+  }
+
+  .normal{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: small;
+    font-style: normal;
+
+  }
+
+  .nav-item{
+    padding-right: 30px;
+    font-size: 20px;
+  }
+
+body{
+  background-image: url(../images/bg\ -\ Copy.jpg);
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 3px solid rgba(0, 0, 0, 0.1);
+}
+
