@@ -8,7 +8,7 @@ const cookieParser=require("cookie-parser");
 
 
 require("./db/connection");
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 5000
 
 const static_path=path.join(__dirname,"../public");
 const template_path=path.join(__dirname,"/templates/views");
