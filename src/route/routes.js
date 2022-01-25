@@ -5,6 +5,7 @@ const auth = require("../middleware/auth");
 
 const student = require("../models/information");
 const book = require("../models/book");
+const { render } = require('express/lib/response');
 
 console.log(process.env.SECRET_KEY);
 
@@ -137,7 +138,7 @@ router.post('/form.hbs', async (req, res) => {
             const registered = await registerStudent.save();
             console.log("The page part " + registered);
 
-            res.status(201).render("cover");
+            res.status(201).render("cover.hbs");
         } else {
             res.send("Passwords not match");
         }
