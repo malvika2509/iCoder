@@ -138,7 +138,7 @@ router.post('/form.hbs', async (req, res) => {
             const registered = await registerStudent.save();
             console.log("The page part " + registered);
 
-            res.status(201).render("cover.hbs");
+            res.status(201).render("/");
         } else {
             res.send("Passwords not match");
         }
