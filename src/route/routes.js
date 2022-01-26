@@ -124,22 +124,24 @@ router.post('/form.hbs', async (req, res) => {
 
             });
 
+            res.send("iewhfwihk");
+
             //defining token here
 
-            const token = await registerStudent.generateAuthToken();
-            // console.log("The token part " + token);
-            res.send(token+" token");
+            // const token = await registerStudent.generateAuthToken();
+            // // console.log("The token part " + token);
+            // res.send(token+" token");
 
-            res.cookie("jwt", token, {
-                expires: new Date(Date.now() + 30000),
-                //milliseconds -30000
-                httpOnly: true
-            });
+            // res.cookie("jwt", token, {
+            //     expires: new Date(Date.now() + 30000),
+            //     //milliseconds -30000
+            //     httpOnly: true
+            // });
 
-            const registered = await registerStudent.save();
-            console.log("The page part " + registered);
+            // const registered = await registerStudent.save();
+            // console.log("The page part " + registered);
 
-            res.status(201).render("cover.hbs");
+            // res.status(201).render("cover.hbs");
         } else {
             res.send("Passwords not match");
         }
