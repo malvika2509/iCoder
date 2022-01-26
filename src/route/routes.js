@@ -165,14 +165,14 @@ router.post('/login.hbs', async (req, res) => {
 
         const isMatch = await bcrypt.compare(password, userEmail.password);
 
-        const token = await userEmail.generateAuthToken();
-        // console.log("The token part " + token);
+        // const token = await userEmail.generateAuthToken();
+        // // console.log("The token part " + token);
 
-        res.cookie("jwt", token, {
-            expires: new Date(Date.now() + 30000),
-            //milliseconds -30000
-            httpOnly: true
-        });
+        // res.cookie("jwt", token, {
+        //     expires: new Date(Date.now() + 30000),
+        //     //milliseconds -30000
+        //     httpOnly: true
+        // });
 
 
         if (isMatch) {

@@ -87,22 +87,22 @@ const registrationForm = new mongoose.Schema({
 
 //generating token
 
-registrationForm.methods.generateAuthToken=async function(){
-    try {
-        console.log(this._id);
-        const token=jwt.sign({_id:this._id.toString()},process.env.SECRET_KEY);
-        this.tokens=this.tokens.concat({token:token});
-        //object destruction...name of key:value is same hence can do this:-
-        // this.tokens=this.tokens.concat({token});
-        await this.save();
-        return token;
-    } catch (error) {
+// registrationForm.methods.generateAuthToken=async function(){
+//     try {
+//         console.log(this._id);
+//         const token=jwt.sign({_id:this._id.toString()},process.env.SECRET_KEY);
+//         this.tokens=this.tokens.concat({token:token});
+//         //object destruction...name of key:value is same hence can do this:-
+//         // this.tokens=this.tokens.concat({token});
+//         await this.save();
+//         return token;
+//     } catch (error) {
 
-        res.send("The error part" + error);
-        console.log(error);
+//         res.send("The error part" + error);
+//         console.log(error);
         
-    }
-}
+//     }
+// }
 
 registrationForm.pre("save", async function (next) {
 
