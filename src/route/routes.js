@@ -127,7 +127,7 @@ router.post('/form.hbs', async (req, res) => {
             //defining token here
 
             const token = await registerStudent.generateAuthToken();
-            // console.log("The token part " + token);
+            console.log("The token part " + token);
 
             res.cookie("jwt", token, {
                 expires: new Date(Date.now() + 30000),
@@ -145,7 +145,7 @@ router.post('/form.hbs', async (req, res) => {
     }
     catch (error) {
 
-        res.status(400).send(error);
+        res.status(400).send(error+"hiu");
         console.log(error);
     }
 })
