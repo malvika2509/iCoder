@@ -124,8 +124,6 @@ router.post('/form.hbs', async (req, res) => {
 
             });
 
-            res.send("iewhfwihk");
-
             //defining token here
 
             // const token = await registerStudent.generateAuthToken();
@@ -138,8 +136,9 @@ router.post('/form.hbs', async (req, res) => {
             //     httpOnly: true
             // });
 
-            // const registered = await registerStudent.save();
-            // console.log("The page part " + registered);
+            const registered = await registerStudent.save();
+            console.log("The page part " + registered);
+            res.send("iewhfwihk");
 
             // res.status(201).render("cover.hbs");
         } else {
