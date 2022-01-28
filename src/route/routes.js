@@ -56,7 +56,7 @@ router.post('/book.hbs', async (req, res) => {
 
         });
 
-        const token = await bookStudent.generateAuthToken();
+        // const token = await bookStudent.generateAuthToken();
         // console.log("The token part " + token);
 
         // res.cookie() function is used to set the cookie name to value
@@ -64,11 +64,11 @@ router.post('/book.hbs', async (req, res) => {
 
         // res.cookie(name, value, [options]);
 
-        res.cookie("jwt", token, {
-            expires: new Date(Date.now() + 3000000),
-            //milliseconds -30000
-            httpOnly: true
-        });
+        // res.cookie("jwt", token, {
+        //     expires: new Date(Date.now() + 3000000),
+        //     //milliseconds -30000
+        //     httpOnly: true
+        // });
 
         const booked = await bookStudent.save();
         // console.log("The page part " + booked);
@@ -83,7 +83,8 @@ router.post('/book.hbs', async (req, res) => {
     }
 })
 
-router.get('/courses.hbs', auth, (req, res) => {
+router.get('/courses.hbs', (req, res) => {
+    // , auth
     // console.log(`this is the cookie ${req.cookies.jwt}`);
     res.render("courses.hbs");
 })
